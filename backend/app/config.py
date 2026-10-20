@@ -40,7 +40,7 @@ class Settings(BaseSettings):
 
     # General
     APP_NAME: str = "AegisRAG"
-    APP_VERSION: str = "0.1.0"
+    APP_VERSION: str = "0.1.1"
     APP_ENV: str = "development"
     DEBUG: bool = False
     HOST: str = "127.0.0.1"

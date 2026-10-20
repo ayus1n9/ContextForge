@@ -26,7 +26,7 @@ FROM python:3.11-slim-bookworm AS runtime
 
 LABEL maintainer="AegisRAG Security Engineering" \
       description="Hardened, security-focused RAG application" \
-      version="0.1.0"
+      version="0.1.1"
 
 ENV PYTHONUNBUFFERED=1 \
     PYTHONDONTWRITEBYTECODE=1 \

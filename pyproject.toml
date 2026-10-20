@@ -1,6 +1,6 @@
 [project]
 name = "aegisrag"
-version = "0.1.0"
+version = "0.1.1"
 description = "Secure Retrieval-Augmented Generation (RAG) Application with AI Security Guardrails"
 readme = "README.md"
 requires-python = ">=3.11"
@@ -32,6 +32,10 @@ dev = [
 [build-system]
 requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["backend*"]
 
 [tool.pytest.ini_options]
 testpaths = ["backend/tests"]
