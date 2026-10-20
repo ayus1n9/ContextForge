@@ -1,4 +1,4 @@
-# AegisRAG Evaluation Harness & Benchmark Methodology
+# ContextForge Evaluation Harness & Benchmark Methodology
 
 This directory contains the benchmark questions, evaluation procedures, and scoring rules for measuring RAG quality, contextual grounding, abstention reliability, and security defenses.
 

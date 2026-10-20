@@ -1,12 +1,12 @@
-# AegisRAG — Secure Retrieval-Augmented Generation Application with AI Security Guardrails
+# ContextForge — Secure Retrieval-Augmented Generation Application with AI Security Guardrails
 
-[![CI](https://github.com/ayus1n9/aegisrag/actions/workflows/ci.yml/badge.svg)](https://github.com/ayus1n9/aegisrag/actions/workflows/ci.yml)
+[![CI](https://github.com/ayus1n9/ContextForge/actions/workflows/ci.yml/badge.svg)](https://github.com/ayus1n9/ContextForge/actions/workflows/ci.yml)
 [![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.115+-009688.svg)](https://fastapi.tiangolo.com/)
 [![Security: Bandit](https://img.shields.io/badge/security-bandit-green.svg)](https://github.com/PyCQA/bandit)
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
 
-A high-assurance, security-focused Retrieval-Augmented Generation (RAG) system engineered for technical document question answering on official FAA and NASA aviation manuals. AegisRAG demonstrates practical defense-in-depth AI security engineering: multi-layered prompt-injection defenses, policy-driven PII redaction, source-grounded citation enforcement, and automated adversarial red-team evaluation.
+A high-assurance, security-focused Retrieval-Augmented Generation (RAG) system engineered for technical document question answering on official FAA and NASA aviation manuals. ContextForge demonstrates practical defense-in-depth AI security engineering: multi-layered prompt-injection defenses, policy-driven PII redaction, source-grounded citation enforcement, and automated adversarial red-team evaluation.
 
 ---
 
@@ -42,7 +42,7 @@ Standard RAG implementations naively concatenate untrusted user inputs with untr
 - **Hallucinated Misinformation**: Chatbots invent factual claims without grounding citations.
 - **Output Injection & XSS**: Model responses output unescaped executable scripts.
 
-AegisRAG addresses these challenges by enforcing security decisions **in application code outside the LLM**, combining deterministic guardrails, RBAC access control, and grounding verification.
+ContextForge addresses these challenges by enforcing security decisions **in application code outside the LLM**, combining deterministic guardrails, RBAC access control, and grounding verification.
 
 ---
 
@@ -95,14 +95,14 @@ User Query ---> [Rate Limiter] ---> [Input Validator] ---> [Prompt Injection Det
 - **Vector Index**: In-memory dense cosine similarity with NumPy
 - **Security Testing**: Pytest, Pytest-Cov, Bandit, Pip-Audit, Ruff
 - **Cloud Provider (Optional)**: AWS Bedrock Converse API (`boto3`) & Bedrock Guardrails
-- **Containerization**: Multi-stage hardened Docker image (non-root `aegis` UID 10001)
+- **Containerization**: Multi-stage hardened Docker image (non-root `contextforge` UID 10001)
 
 ---
 
 ## Project Structure
 
 ```
-aegisrag/
+ContextForge/
 ├── backend/
 │   ├── app/
 │   │   ├── main.py                     # FastAPI app with security middlewares
@@ -141,8 +141,8 @@ aegisrag/
 ### 1. Clone & Setup Virtual Environment
 
 ```bash
-git clone https://github.com/ayus1n9/aegisrag.git
-cd aegisrag
+git clone https://github.com/ayus1n9/ContextForge.git
+cd ContextForge
 
 # Create virtual environment
 python3 -m venv .venv
@@ -257,10 +257,10 @@ Build and run the hardened container:
 
 ```bash
 # Build Docker image
-docker build -t aegisrag:latest .
+docker build -t contextforge:latest .
 
 # Run container as unprivileged user
-docker run -p 8000:8000 aegisrag:latest
+docker run -p 8000:8000 contextforge:latest
 ```
 
 ---
@@ -268,4 +268,4 @@ docker run -p 8000:8000 aegisrag:latest
 ## Safety Considerations & Disclaimers
 
 > [!CAUTION]
-> **Aviation Safety Notice**: AegisRAG is an educational document assistant. Generated answers must **NOT** be used as authoritative operational flight-safety, aircraft maintenance dispatch, or safety-critical engineering instructions. Always consult certified FAA/EASA flight manuals and licensed personnel.
+> **Aviation Safety Notice**: ContextForge is an educational document assistant. Generated answers must **NOT** be used as authoritative operational flight-safety, aircraft maintenance dispatch, or safety-critical engineering instructions. Always consult certified FAA/EASA flight manuals and licensed personnel.

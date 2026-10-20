@@ -1,6 +1,6 @@
-# AegisRAG System Architecture
+# ContextForge System Architecture
 
-AegisRAG is a security-focused Retrieval-Augmented Generation (RAG) system engineered for high-assurance document question answering on technical reference manuals.
+ContextForge is a security-focused Retrieval-Augmented Generation (RAG) system engineered for high-assurance document question answering on technical reference manuals.
 
 ---
 

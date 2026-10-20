@@ -1,4 +1,4 @@
-name: AegisRAG DevSecOps CI Pipeline
+name: ContextForge DevSecOps CI Pipeline
 
 on:
   push:

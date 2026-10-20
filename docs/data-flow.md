@@ -1,6 +1,6 @@
-# AegisRAG Data Flow Architecture
+# ContextForge Data Flow Architecture
 
-This document describes data flow paths across trust boundaries in AegisRAG.
+This document describes data flow paths across trust boundaries in ContextForge.
 
 ---
 

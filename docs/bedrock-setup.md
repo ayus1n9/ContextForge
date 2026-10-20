@@ -1,6 +1,6 @@
 # Amazon Bedrock and Bedrock Guardrails Setup Guide
 
-AegisRAG supports optional integration with **Amazon Bedrock** foundation models (such as Claude 3.5 Sonnet) and **Amazon Bedrock Guardrails**.
+ContextForge supports optional integration with **Amazon Bedrock** foundation models (such as Claude 3.5 Sonnet) and **Amazon Bedrock Guardrails**.
 
 > [!NOTE]
 > Amazon Bedrock is **strictly optional**. The application runs 100% locally with zero cloud dependencies using the default deterministic mock provider. No AWS credentials are required for local development or automated testing.
@@ -11,7 +11,7 @@ AegisRAG supports optional integration with **Amazon Bedrock** foundation models
 
 1. An active AWS account with Amazon Bedrock model access granted in your target region (e.g., `us-east-1` or `us-west-2`).
 2. IAM credentials configured via standard AWS mechanisms (`~/.aws/credentials`, environment variables, or IAM Instance Profile / ECS Task Role).
-3. Python package `boto3` installed (included in AegisRAG dependencies).
+3. Python package `boto3` installed (included in ContextForge dependencies).
 
 ---
 

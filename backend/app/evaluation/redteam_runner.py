@@ -1,6 +1,6 @@
 """Red-Team Adversarial Evaluation Runner CLI.
 
-Executes automated red-team suites against AegisRAG guardrails.
+Executes automated red-team suites against ContextForge guardrails.
 Generates machine-readable JSON test logs and human-readable Markdown reports.
 Accurately verifies whether prohibited attack behaviors were actually PREVENTED.
 """
@@ -257,7 +257,7 @@ def run_test_case(case: RedTeamTestCase, index: int = 1) -> RedTeamExecutionResu
 def format_markdown_report(report: RedTeamSuiteReport) -> str:
     """Generate a GitHub-flavored markdown report from the evaluation results."""
     lines = [
-        "# AegisRAG Red-Team Adversarial Evaluation Report",
+        "# ContextForge Red-Team Adversarial Evaluation Report",
         "",
         f"- **Suite**: `{report.suite_name}`",
         f"- **Timestamp**: `{report.timestamp}`",
@@ -308,7 +308,7 @@ def format_markdown_report(report: RedTeamSuiteReport) -> str:
 
 def main():
     parser = argparse.ArgumentParser(
-        description="AegisRAG Red-Team Adversarial Evaluation Runner"
+        description="ContextForge Red-Team Adversarial Evaluation Runner"
     )
     parser.add_argument(
         "--suite",
@@ -333,7 +333,7 @@ def main():
     args = parser.parse_args()
 
     print("\n=======================================================")
-    print(f" AegisRAG Red-Team Evaluation Runner: Suite '{args.suite}'")
+    print(f" ContextForge Red-Team Evaluation Runner: Suite '{args.suite}'")
     print("=======================================================\n")
 
     setup_evaluation_corpus()

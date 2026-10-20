@@ -1,11 +1,11 @@
 [project]
-name = "aegisrag"
-version = "0.1.1"
-description = "Secure Retrieval-Augmented Generation (RAG) Application with AI Security Guardrails"
+name = "contextforge"
+version = "0.2.0"
+description = "ContextForge — Secure Retrieval-Augmented Generation (RAG) Application with AI Security Guardrails"
 readme = "README.md"
 requires-python = ">=3.11"
 authors = [
-    { name = "AegisRAG Security Engineering Team" }
+    { name = "ContextForge Security Engineering Team" }
 ]
 dependencies = [
     "fastapi>=0.115.0",

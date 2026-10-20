@@ -39,8 +39,8 @@ class Settings(BaseSettings):
     )
 
     # General
-    APP_NAME: str = "AegisRAG"
-    APP_VERSION: str = "0.1.1"
+    APP_NAME: str = "ContextForge"
+    APP_VERSION: str = "0.2.0"
     APP_ENV: str = "development"
     DEBUG: bool = False
     HOST: str = "127.0.0.1"
@@ -88,7 +88,7 @@ class Settings(BaseSettings):
     RATE_LIMIT_BURST: int = 15
 
     # Audit & Observability
-    AUDIT_LOG_FILE: str = "aegisrag_security_events.log"
+    AUDIT_LOG_FILE: str = "contextforge_security_events.log"
     LOG_LEVEL: str = "INFO"
 
 

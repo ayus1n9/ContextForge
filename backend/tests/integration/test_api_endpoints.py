@@ -29,7 +29,7 @@ def test_version_endpoint(client: TestClient):
     resp = client.get("/version")
     assert resp.status_code == 200
     data = resp.json()
-    assert data["app_name"] == "AegisRAG"
+    assert data["app_name"] == "ContextForge"
     assert data["owasp_llm_top_10_version"] == "2025"
 
 

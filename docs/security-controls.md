@@ -1,6 +1,6 @@
-# AegisRAG Security Controls Specification
+# ContextForge Security Controls Specification
 
-This document details the layered defense controls implemented in AegisRAG.
+This document details the layered defense controls implemented in ContextForge.
 
 ---
 

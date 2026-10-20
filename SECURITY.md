@@ -2,13 +2,13 @@
 
 ## Reporting a Vulnerability
 
-The AegisRAG team takes security vulnerabilities seriously. We appreciate the responsible disclosure of security issues.
+The ContextForge team takes security vulnerabilities seriously. We appreciate the responsible disclosure of security issues.
 
 ### Reporting Guidelines
-If you discover a security vulnerability, prompt injection bypass, or sensitive data leakage in AegisRAG, please **do NOT report it through public GitHub issues**.
+If you discover a security vulnerability, prompt injection bypass, or sensitive data leakage in ContextForge, please **do NOT report it through public GitHub issues**.
 
 Instead, send a detailed report via encrypted email to:
-- **Email**: `security@aegisrag.dev` (or open a confidential GitHub Security Advisory)
+- **Email**: `security@contextforge.dev` (or open a confidential GitHub Security Advisory)
 
 ### Report Details
 Please include:

@@ -1,8 +1,8 @@
-# AegisRAG Threat Model and Security Architecture
+# ContextForge Threat Model and Security Architecture
 
 ## 1. Overview & Trust Boundaries
 
-AegisRAG is designed under the assumption of **Zero Trust for all external inputs**:
+ContextForge is designed under the assumption of **Zero Trust for all external inputs**:
 - **Untrusted Zone 1 (User Queries)**: Direct user prompts may contain malicious injection attacks, jailbreak payloads, Canary exfiltration attempts, PII, or resource-exhaustion payloads.
 - **Untrusted Zone 2 (External Documents)**: PDF files ingested from local or remote sources may contain active executable tags (`/Launch`, `/JavaScript`), malformed streams, or indirect prompt injection instructions.
 - **Untrusted Zone 3 (Model Generation)**: Model responses may hallucinate false facts, leak confidential credentials, or generate XSS markup.

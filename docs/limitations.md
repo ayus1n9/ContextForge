@@ -1,12 +1,12 @@
 # Technical Limitations and Residual Risks
 
-AegisRAG is built with defense-in-depth security principles. However, in accordance with responsible AI security engineering, the following limitations and residual risks are explicitly documented:
+ContextForge is built with defense-in-depth security principles. However, in accordance with responsible AI security engineering, the following limitations and residual risks are explicitly documented:
 
 ---
 
 ## 1. Prompt Injection Cannot Be 100% Eliminated
 - Direct and indirect prompt injection are fundamental open challenges in language model architectures.
-- AegisRAG combines deterministic regex rules, heuristic scoring, isolated prompt boundaries, and output filtering.
+- ContextForge combines deterministic regex rules, heuristic scoring, isolated prompt boundaries, and output filtering.
 - While this layered approach blocks all test cases in the defined adversarial suite, sophisticated multi-turn linguistic manipulation, novel ciphers, or multi-lingual obfuscation may occasionally evade pattern detection.
 
 ---

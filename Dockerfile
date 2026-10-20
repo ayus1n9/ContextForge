@@ -1,8 +1,8 @@
 # ==============================================================================
-# AegisRAG - Secure Multi-Stage Hardened Dockerfile
+# ContextForge - Secure Multi-Stage Hardened Dockerfile
 # Follows DevSecOps least-privilege principles:
 # - Minimal Debian/Python base image
-# - Dedicated non-privileged runtime user (aegis, UID 10001)
+# - Dedicated non-privileged runtime user (contextforge, UID 10001)
 # - Zero embedded credentials or sensitive documents
 # ==============================================================================
 
@@ -24,9 +24,9 @@ RUN python -m venv /opt/venv \
 # Stage 2: Hardened Runtime
 FROM python:3.11-slim-bookworm AS runtime
 
-LABEL maintainer="AegisRAG Security Engineering" \
-      description="Hardened, security-focused RAG application" \
-      version="0.1.1"
+LABEL maintainer="ContextForge Security Engineering" \
+      description="ContextForge — Hardened, security-focused RAG application" \
+      version="0.2.0"
 
 ENV PYTHONUNBUFFERED=1 \
     PYTHONDONTWRITEBYTECODE=1 \
@@ -36,20 +36,20 @@ ENV PYTHONUNBUFFERED=1 \
     PORT=8000
 
 # Create dedicated non-root user and group
-RUN groupadd -g 10001 aegis \
-    && useradd -u 10001 -g aegis -m -s /sbin/nologin aegis
+RUN groupadd -g 10001 contextforge \
+    && useradd -u 10001 -g contextforge -m -s /sbin/nologin contextforge
 
 WORKDIR /app
 
 # Copy virtual environment from builder
-COPY --from=builder --chown=aegis:aegis /opt/venv /opt/venv
+COPY --from=builder --chown=contextforge:contextforge /opt/venv /opt/venv
 
 # Copy backend application source
-COPY --chown=aegis:aegis backend/ /app/backend/
-COPY --chown=aegis:aegis pyproject.toml /app/pyproject.toml
+COPY --chown=contextforge:contextforge backend/ /app/backend/
+COPY --chown=contextforge:contextforge pyproject.toml /app/pyproject.toml
 
 # Switch to unprivileged user
-USER aegis:aegis
+USER contextforge:contextforge
 
 EXPOSE 8000
 
