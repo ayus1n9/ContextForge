@@ -1,0 +1,36 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+.venv/
+venv/
+ENV/
+env/
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+coverage.xml
+
+# Linters & Type Checking
+.mypy_cache/
+.ruff_cache/
+
+# Environment Variables & Secrets
+.env
+*.pem
+*.key
+*.cert
+
+# Application Data & Local Vector Stores
+vector_store_data/
+*.db
+*.sqlite3
+*.log
+
+# Operating System
+.DS_Store
+Thumbs.db
